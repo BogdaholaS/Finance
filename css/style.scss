@@ -344,7 +344,6 @@ main{
         }
       }
       .companyValues-content-bottom{
-        width: 740px;
         height: 335px;
         .circle{
           text-align: center;
@@ -432,10 +431,10 @@ main{
       }
       .coreServices-items{
         width: 1119px;
-        display: flex;
+        @include flex;
         flex-wrap: wrap;
         @media(max-width: 1200px){
-          width: 800px;
+          width: auto;
         }
         .coreServices-item{
           display: flex;
@@ -473,9 +472,12 @@ main{
         @include NewSection;
       }
       .different-items{
-        width: 1140px;
-        display: flex;
+        width: 1170px;
+        @include flex;
         flex-wrap: wrap;
+        @media(max-width:1200px) {
+          width: 100%;
+        }
         .differentItem{
           @include flex;
           flex-direction: column;

@@ -300,7 +300,6 @@ main .companyValues {
       font-weight: 400;
       line-height: 24px; }
   main .companyValues .companyValues-content .companyValues-content-bottom {
-    width: 740px;
     height: 335px; }
     main .companyValues .companyValues-content .companyValues-content-bottom .circle {
       text-align: center; }
@@ -404,10 +403,12 @@ main .coreServices .coreServices-content {
   main .coreServices .coreServices-content .coreServices-items {
     width: 1119px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; }
     @media (max-width: 1200px) {
       main .coreServices .coreServices-content .coreServices-items {
-        width: 800px; } }
+        width: auto; } }
     main .coreServices .coreServices-content .coreServices-items .coreServices-item {
       display: flex;
       justify-content: center;
@@ -457,9 +458,14 @@ main .different .different-content {
           margin: 0 auto;
           line-height: 28px; } }
   main .different .different-content .different-items {
-    width: 1140px;
+    width: 1170px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; }
+    @media (max-width: 1200px) {
+      main .different .different-content .different-items {
+        width: 100%; } }
     main .different .different-content .different-items .differentItem {
       display: flex;
       justify-content: center;
