@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+	<div class="headerTop">
+		<div class="logo">
+			<img src="img/Header/header-logo.png">
+		</div>
+		<div class="header-menu" id="menu">
+			<div class="mobile-menu" @click="isActive = true">
+				<i class="fas fa-bars"></i>
+			</div>
+			<transition name="slide" v-if="isActive">
+				<div class="active-menu">
+					<div class="close" @click="isActive = false">
+						<i class="fas fa-times"></i>
+					</div>
+					<nav>
+						<ul>
+							<li>HOME</li>
+							<li>DEMOS</li>
+							<li>PORTFOLIO</li>
+							<li>BLOG</li>
+							<li>CONTACT</li>
+						</ul>
+					</nav>
+				</div>
+			</transition>
+			<transition name="slide" v-else>
+				<nav class="menu">
+					<ul>
+						<li>HOME</li>
+						<li>DEMOS</li>
+						<li>PORTFOLIO</li>
+						<li>BLOG</li>
+						<li>CONTACT</li>
+					</ul>
+				</nav>
+			</transition>
+		</div>
+	</div>
+	<div class="headerMiddle">
+		<h3>The Future of Digital Products Together.</h3>
+		<h1>we provide financial planning</h1>
+		<p>Coordinates for abs potioning the closest positioned parent box of the positioned abs qoning the closes for abs potioning the closest positioned parent b ting that ments that.
+		</p>
+		<button>Learn more</button>
+	</div>
+	<div class="headerBottom">
+		<div class="headerBottom-left">
+			<h3>DON’T SEE WHAT YOU ARE LOOKING FOR?</h3>
+			<p>Use our Budget planner to keep on top of your spending, use our tool to work out what you have left after paying your most important bills.</p>
+			<div class="btn">Read More</div>
+		</div>
+		<div class="headerBottom-right">
+			<div class="features">
+				<div class="featuresBlock">
+					<div class="featureItem">
+						<div class="featureItem-icon">
+							<img src="img/Header/HeaderBottom/feature1.png" alt="">
+						</div>
+						<div class="featureItem-text">
+							<h3>Financial Experts</h3>
+							<p>Coordinates for abs po oordinates for abs potioning the closes.</p>
+						</div>
+					</div>
+					<div class="featureItem">
+						<div class="featureItem-icon">
+							<img src="img/Header/HeaderBottom/feature2.png" alt="">
+						</div>
+						<div class="featureItem-text">
+							<h3>Creative Process</h3>
+							<p>Coordinates for abs po oordinates for abs potioning the closes.</p>
+						</div>
+					</div>
+					<div class="featureItem">
+						<div class="featureItem-icon">
+							<img src="img/Header/HeaderBottom/feature3.png" alt="">
+						</div>
+						<div class="featureItem-text">
+							<h3>Business Solution</h3>
+							<p>Coordinates for abs po oordinates for abs potioning the closes.</p>
+						</div>
+					</div>
+					<div class="featureItem">
+						<div class="featureItem-icon">
+							<img src="img/Header/HeaderBottom/feature4.png" alt="">
+						</div>
+						<div class="featureItem-text">
+							<h3>24/7 support</h3>
+							<p>Coordinates for abs po oordinates for abs potioning the closes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="companyValues">
+		<div class="happyMan">
+			<img src="img/Main/1%20Company%20Values/happyMan.png" alt="">
+		</div>
+		<div class="companyValues-content">
+			<div class="companyValues-content-top">
+				<h2>Our Company Values</h2>
+				<p>With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet, so it’s important that you can trust the people who are dealing with your personal information.</p>
+			</div>
+			<div class="companyValues-content-bottom">
+				<div class="circle">
+					<img src="img/Main/1%20Company%20Values/adwa.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="experts">
+		<div class="experts-content">
+			<h2>Experts are behind everything we do.</h2>
+			<p>Finance theme is created based on the most business trends to empower your website with everything you need to establish your corporate, start-up, or even personal website.</p>
+			<div class="experts-content-buttons">
+				<div class="experts-content-btn">Learn More</div>
+				<div class="experts-content-btn">Contact Us</div>
+			</div>
+		</div>
+	</section>
+	<section class="coreServices">
+		<div class="coreServices-content">
+			<div class="coreServices-heading">
+				<h3>Our Core Services</h3>
+				<p>With these values, we embrace our mission to bring each client the best service.</p>
+			</div>
+			<div class="coreServices-items">
+				<div class="coreServices-item col-12 col-md-6 col-lg-6 col-xl-4">
+					<div class="coreService-icon">
+						<img src="img/Main/3%20Core%20Services/home.png" alt="">
+					</div>
+					<div class="coreService-text">
+						<h4>Audit & Assurance</h4>
+						<p>Coordinates for abs po oordinates for abs potioning the closest potioned Coor tiom lorem dinates.</p>
+					</div>
+				</div>
+				<div class="coreServices-item col-12 col-md-6 col-lg-6 col-xl-4">
+					<div class="coreService-icon">
+						<img src="img/Main/3%20Core%20Services/case.png" alt="">
+					</div>
+					<div class="coreService-text">
+						<h4>Business Services</h4>
+						<p>Coordinates for abs po oordinates for abs potioning the closest potioned Coor tiom lorem dinates.</p>
+					</div>
+				</div>
+				<div class="coreServices-item col-12 col-md-6 col-lg-6 col-xl-4">
+					<div class="coreService-icon">
+						<img src="img/Main/3%20Core%20Services/graphic.png" alt="">
+					</div>
+					<div class="coreService-text">
+						<h4>Financial Planning</h4>
+						<p>Coordinates for abs po oordinates for abs potioning the closest potioned Coor tiom lorem dinates.</p>
+					</div>
+				</div>
+				<div class="coreServices-item col-12 col-md-6 col-lg-6 col-xl-4">
+					<div class="coreService-icon">
+						<img src="img/Main/3%20Core%20Services/smart.png" alt="">
+					</div>
+					<div class="coreService-text">
+						<h4>IT Control Solutions</h4>
+						<p>Coordinates for abs po oordinates for abs potioning the closest potioned Coor tiom lorem dinates.</p>
+					</div>
+				</div>
+				<div class="coreServices-item col-12 col-md-6 col-lg-6 col-xl-4">
+					<div class="coreService-icon">
+						<img src="img/Main/3%20Core%20Services/lamp.png" alt="">
+					</div>
+					<div class="coreService-text">
+						<h4>Year-End Tax Planning</h4>
+						<p>Coordinates for abs po oordinates for abs potioning the closest potioned Coor tiom lorem dinates.</p>
+					</div>
+				</div>
+				<div class="coreServices-item col-12 col-md-6 col-lg-6 col-xl-4">
+					<div class="coreService-icon">
+						<img src="img/Main/3%20Core%20Services/da.png" alt="">
+					</div>
+					<div class="coreService-text">
+						<h4>Tax Advisory Services</h4>
+						<p>Coordinates for abs po oordinates for abs potioning the closest potioned Coor tiom lorem dinates.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="different">
+		<div class="different-content">
+			<div class="different-heading">
+				<h3>WE OFFER DIFFERENT SERVICES</h3>
+				<p>With these values, we embrace our mission to bring each client the best service.</p>
+			</div>
+			<div class="different-items">
+				<div class="differentItem col-12 col-lg-6 col-xl-4">
+					<div class="belowBlock">
+						<div class="belowBlock-content">
+							<div class="belowBlock-heading">Financial planning</div>
+							<div class="belowBlock-job">Great Experts</div>
+							<div class="belowBlock-p">True financial planning is a comprehensive, ongoing approach that starts with helping you define your dreams.</div>
+						</div>
+					</div>
+				</div>
+				<div class="differentItem col-12 col-lg-6 col-xl-4">
+					<div class="belowBlock">
+						<div class="belowBlock-content">
+							<div class="belowBlock-heading">Stocks</div>
+							<div class="belowBlock-job">Great Experts</div>
+							<div class="belowBlock-p">True financial planning is a comprehensive, ongoing approach that starts with helping you define your dreams.</div>
+						</div>
+					</div>
+				</div>
+				<div class="differentItem col-12 col-lg-6 col-xl-4">
+					<div class="belowBlock">
+						<div class="belowBlock-content">
+							<div class="belowBlock-heading">Cash, cards & lending</div>
+							<div class="belowBlock-job">Great Experts</div>
+							<div class="belowBlock-p">True financial planning is a comprehensive, ongoing approach that starts with helping you define your dreams.</div>
+						</div>
+					</div>
+				</div>
+				<div class="differentItem col-12 col-lg-6 col-xl-4">
+					<div class="belowBlock">
+						<div class="belowBlock-content">
+							<div class="belowBlock-heading">Investments</div>
+							<div class="belowBlock-job">Great Experts</div>
+							<div class="belowBlock-p">True financial planning is a comprehensive, ongoing approach that starts with helping you define your dreams.</div>
+						</div>
+					</div>
+				</div>
+				<div class="differentItem col-12 col-lg-6 col-xl-4">
+					<div class="belowBlock">
+						<div class="belowBlock-content">
+							<div class="belowBlock-heading">Personal trust services</div>
+							<div class="belowBlock-job">Great Experts</div>
+							<div class="belowBlock-p">True financial planning is a comprehensive, ongoing approach that starts with helping you define your dreams.</div>
+						</div>
+					</div>
+				</div>
+				<div class="differentItem col-12 col-lg-6 col-xl-4">
+					<div class="belowBlock">
+						<div class="belowBlock-content">
+							<div class="belowBlock-heading">Insurance & annuities</div>
+							<div class="belowBlock-job">Great Experts</div>
+							<div class="belowBlock-p">True financial planning is a comprehensive, ongoing approach that starts with helping you define your dreams.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="twitterBlock">
+			<div class="twitterBlock-content">
+				<div class="twitterIcon">
+					<img src="img/Main/4%20Different%20Services/twitter%20icon.png" alt="">
+				</div>
+				<div>
+					<p>Check out 'Finance Business - Attorney & Lawyer #Wordpress Template' on #EnvatoMarket by @cthemexpert #themeforest http://t.co/xGQF0aEz8F</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="footer-content">
+		<div class="recentNews">
+			<div class="recentNews-heading">
+				Recent News
+			</div>
+			<div class="newsItem">
+				<div class="newsImage">
+					<img src="img/Footer/Layer_22.png" alt="">
+				</div>
+				<div class="newsText">
+					A Clean Website Gives More Experience To The Visitors
+					<sub>Dec 12 - 2016</sub>
+				</div>
+			</div>
+			<div class="newsItem">
+				<div class="newsImage">
+					<img src="img/Footer/Layer_23.png" alt="">
+				</div>
+				<div class="newsText">
+					A Clean Website Gives More Experience To The Visitors
+					<sub>Dec 12 - 2016</sub>
+				</div>
+			</div>
+		</div>
+		<div class="usefulLinks">
+			<div class="usefulLinks-heading">Useful Links</div>
+			<div class="usefulLinks-items">
+				<div class="Col">
+					<div class="usefulLinks-item"><a href="#">Web Design</a></div>
+					<div class="usefulLinks-item"><a href="#">About Firm</a></div>
+					<div class="usefulLinks-item"><a href="#">Mobile</a></div>
+					<div class="usefulLinks-item"><a href="#">Why Finance</a></div>
+					<div class="usefulLinks-item"><a href="#">Social Media</a></div>
+					<div class="usefulLinks-item"><a href="#">Site Map</a></div>
+				</div>
+				<div class="Col">
+					<div class="usefulLinks-item"><a href="#">Company</a></div>
+					<div class="usefulLinks-item"><a href="#">Latest Jobs</a></div>
+					<div class="usefulLinks-item"><a href="#">Partners</a></div>
+					<div class="usefulLinks-item"><a href="#">Blog Posts</a></div>
+					<div class="usefulLinks-item"><a href="#">Help Topics</a></div>
+					<div class="usefulLinks-item"><a href="#">Policies</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="mailingList">
+			<div class="mailingList-heading">Mailing List</div>
+			<div class="mailingList-form">
+				<p>Sign up for our mailing list to get latest updates and offers.</p>
+				<div>
+					<input type="text" placeholder="Email Address">
+					<img src="img/Footer/footerBtn.png" alt="">
+				</div>
+				<sub>We respect your privacy</sub>
+			</div>
+			<div class="mailingList-icons">
+				<div class="twitterIcon">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="googleIcon">
+					<i class="fab fa-google-plus-g"></i>
+				</div>
+				<div class="facebookIcon">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="linkedinIcon">
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+				<div class="youtube">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="instagramIcon">
+					<i class="fab fa-instagram"></i>
+				</div>
+			</div>
+		</div>
+		<div class="aboutFinance">
+			<div class="aboutFinance-heading">About Finance</div>
+			<div class="aboutFinance-p">
+				<p>finance Website Builder is a big library of pre-designed web elements which help you create website in few minutes.</p>
+			</div>
+			<div class="aboutFinance-info">
+				<div class="email">
+					<i class="fas fa-envelope"></i>
+					<span>hello@finance.com</span>
+				</div>
+				<div class="phone">
+					<i class="fas fa-phone"></i>
+					<span>P: 1234-4556-678</span>
+				</div>
+				<div class="adress">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>12/4 Barnard St - Suite 888
+						United Kingdom - GA 32323</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:"#menu",
+        data:{
+            isActive:false
+        }
+    });
+</script>
+</body>
+</html>
